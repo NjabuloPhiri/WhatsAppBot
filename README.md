@@ -18,6 +18,12 @@ pip install twilio
 pip install Django
 ```
 
+## Run
+
+```python
+python manage.py runserver
+```
+
 ## Usage
 
 ```python
