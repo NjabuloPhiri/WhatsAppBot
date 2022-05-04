@@ -37,6 +37,8 @@ if message == 'my message':
    return HttpResponse(str(reply))
 ```
 
+Please note: Ensure that you are signed up on the Twilio WhatsApp Sandbox so that you can set the SID to your preferred WhatsApp number. This should then allow you to send messages between the API and the specified WhatsApp account. Equally important are the account_sid and the auth_token. Make sure you obtain these when you create your account on Twilio.
+
 ## Demo 1
 This is a very basic version of the solution. From being able to send messages between the Sandbox and a WhatsApp user, the next step is manipulating the response from the user -- which comes as XML -- such that it is stripped of the XML tags and only the message string is left. The string can then be added onto a database, from which it can later be called to present a summary of the responses from the user.
 
